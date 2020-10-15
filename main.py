@@ -43,9 +43,9 @@ def identifikasi(target_ip):
     netcut(gateway_ip)
 
 if __name__=="__main__":
-    ip = input("Masukan IP Router dan port nya , example xxx.xxx.x.x/yy , jika tidak maka akan default: ")
+    ip = input("Masukan IP Router , example xxx.xxx.x.x/yy , jika tidak maka akan default: ")
     if ip == "n":
-        target_ip = "192.168.1.1/24"
+        target_ip = "192.168.1.1"
     else:
         target_ip = ip
     print(target_ip)
