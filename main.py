@@ -27,7 +27,6 @@ def identifikasi(target_ip):
     for sent, received in result:
         clients.append({'ip': received.psrc, 'mac': received.hwsrc})
     # print clients
-    print("Available devices in the network:")
     print("Your IP >> ", myip)
     print("Your Mac >> ", my_macs)
     print("Router IP >> ", ip, "\n")
