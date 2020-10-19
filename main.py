@@ -44,7 +44,7 @@ def identifikasi(target_ip):
 
 if __name__=="__main__":
     print("Author github.com/Anasg4 \n")
-    ip = input("Masukan IP Router , jika tidak maka akan default: ")
+    ip = input("Masukan IP Router , jika tidak maka akan default\nInsert your Router IP, if not it will use default IP (192.168.1.1)\n >>  ")
     if ip == "n":
         target_ip = "192.168.1.1"
     else:
