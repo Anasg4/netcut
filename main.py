@@ -1,6 +1,8 @@
 from scapy.layers.l2 import *
 from scapy.all import *
 from scapy.layers.dot11 import *
+import sys
+
 myip = get_if_addr(conf.iface)
 my_macs = get_if_hwaddr(conf.iface)
 
@@ -16,7 +18,7 @@ def netcut(gateway):
         if ask=="y":
             continue
         else:
-         break
+         sys.exit()
 
 def identifikasi(target_ip):
     arp = ARP(pdst=target_ip)
